@@ -1063,8 +1063,8 @@ static inline int venus_hfi_clk_gating_off(struct venus_hfi_device *device)
 			dprintk(VIDC_ERR, "Failed venus clock enable");
 			goto fail_clk_power_on;
 		}
-		venus_hfi_write_register(device,
-				VIDC_WRAPPER_INTR_MASK, VIDC_WRAPPER_INTR_MASK_A2HVCODEC_BMSK, 0);
+	        venus_hfi_write_register(device,
+			        VIDC_WRAPPER_INTR_MASK, VIDC_WRAPPER_INTR_MASK_A2HVCODEC_BMSK, 0);
 	}
 already_enabled:
 	device->clocks_enabled = 1;
