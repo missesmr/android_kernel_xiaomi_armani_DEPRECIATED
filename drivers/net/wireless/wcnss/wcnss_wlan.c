@@ -380,6 +380,7 @@ static struct {
 	int	iris_xo_mode_set;
 	int	fw_vbatt_state;
 	int	ctrl_device_opened;
+	char	wlan_nv_macAddr[WLAN_MAC_ADDR_SIZE];
 	struct mutex dev_lock;
 	struct mutex ctrl_lock;
 	wait_queue_head_t read_wait;
