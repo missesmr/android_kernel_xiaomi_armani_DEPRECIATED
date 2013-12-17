@@ -357,7 +357,8 @@ void mdss_dsi_panel_reset(struct mdss_panel_data *pdata, int enable);
 void mdss_dsi_phy_disable(struct mdss_dsi_ctrl_pdata *ctrl);
 void mdss_dsi_phy_init(struct mdss_panel_data *pdata);
 void mdss_dsi_phy_sw_reset(unsigned char *ctrl_base);
-void mdss_dsi_cmd_test_pattern(struct mdss_panel_data *pdata);
+void mdss_dsi_cmd_test_pattern(struct mdss_dsi_ctrl_pdata *ctrl);
+void mdss_dsi_video_test_pattern(struct mdss_dsi_ctrl_pdata *ctrl);
 void mdss_dsi_panel_pwm_cfg(struct mdss_dsi_ctrl_pdata *ctrl);
 
 void mdss_dsi_ctrl_init(struct mdss_dsi_ctrl_pdata *ctrl);
